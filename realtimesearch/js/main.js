@@ -6,15 +6,19 @@ new Vue({
                   keyword: '',
                   users: [
                       {
+                        id: 1,
                           name: '佐藤',
                       },
                       {
+                        id: 2,
                           name: '山田',
                       },
                       {
+                        id: 3,
                           name: '鈴木',
                       },
                       {
+                        id: 4,
                           name: '田中',
                       },
                   ]

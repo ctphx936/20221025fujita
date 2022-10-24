@@ -1,0 +1,10 @@
+.name{
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.textbox{
+  font-weight: bold;
+  border: 2px solid #2afa00;
+  border-radius: 5px; 
+}

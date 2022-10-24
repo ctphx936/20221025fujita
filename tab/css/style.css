@@ -1,0 +1,43 @@
+#tab {
+  width: 100%;
+  max-width: 500px;
+  margin: 40px auto;
+}
+#tab .tabMenu {
+  display: flex;
+  list-style: none;
+}
+
+/*タブ未選択時*/
+#tab .tabMenu li {
+  width: auto;
+  padding: 10px 20px;
+  color: rgb(0, 0, 0);
+  border: 1px solid #d2d3d4;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+/*タブ選択時の処理*/
+#tab .tabMenu li.active {
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  background-color: #000000;
+}
+
+#tab .tabMenu li:last-child {
+   
+}
+
+/*タブの中身*/
+#tab .tabContents {
+  width: 100%;
+  margin: 10px auto;
+
+}
+#tab .tabContents h2 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  font-weight: bolder;
+ 
+}

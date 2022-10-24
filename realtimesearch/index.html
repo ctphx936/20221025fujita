@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+
+
+<body>
+
+  <div id="app">
+    <input type="text" v-model="keyword" class="textbox">
+    <table>
+      <tr v-for="user in filteredUsers" :key="user.id">
+        <td v-text="user.name" class="name"></td>
+      </tr>
+    </table>
+  </div>
+
+  <!--javascript読み込み-->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

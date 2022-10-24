@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+
+
+<body>
+
+  <div id="app">
+
+    <button v-on:click="openModal">開く</button>
+
+    <div id="overlay" v-show="showContent">
+      <div id="content">
+        <div class="cotent-copy1">
+          <p>モーダルウィンドウ</p>
+          <button v-on:click="closeModal">閉じる</button>
+        </div>
+      </div>
+      <div id="overlay" v-show="showContent" v-on:click="closeModal">
+      </div>
+    </div>
+
+    <!--javascript読み込み-->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

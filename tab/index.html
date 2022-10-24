@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+
+
+<body>
+
+  <div id="tab">
+    <ul class="tabMenu">
+      <li @click="isSelect('1')" v-bind:class="{'active': isActive == '1'}">タブ1</li>
+      <li @click="isSelect('2')" v-bind:class="{'active': isActive == '2'}">タブ2</li>
+      <li @click="isSelect('3')" v-bind:class="{'active': isActive == '3'}">タブ3</li>
+    </ul>
+    <div class="tabContents">
+      <div v-if="isActive == '1'">コンテンツ1</div>
+      <div v-else-if="isActive == '2'">コンテンツ2</div>
+      <div v-else-if="isActive == '3'">コンテンツ3</div>
+    </div>
+  </div>
+
+  <!--javascript読み込み-->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
